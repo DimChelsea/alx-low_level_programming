@@ -12,7 +12,8 @@ unsigned int binary_to_uint(const char *b)
 	int i = 0, length;
 	unsigned int Numconv = 0;
 
-	for (length = 0; b[length] != '\0'; ++length);
+	for (length = 0; b[length] != '\0'; ++length)
+		;
 
 	if (b == NULL)
 		return (0);
@@ -29,7 +30,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 		return (0);
-		length++;
+		length--;
 		 i++;
 	}
 		return (Numconv);
