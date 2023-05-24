@@ -28,9 +28,9 @@ unsigned int binary_to_uint(const char *b)
 			Numconv += (1 * (1 << length));
 		}
 		else
-			return (0);
+		return (0);
 		length++;
-		i++;
+		 i++;
 	}
-	return (Numconv);
+		return (Numconv);
 }
